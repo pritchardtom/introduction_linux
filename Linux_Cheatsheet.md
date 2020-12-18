@@ -5,7 +5,7 @@
 
 Use the `pwd` command to print the current directory you're in:
 
-```
+```bash
 [s.a.username@sl2 ~]$ pwd
 /home/s.a.username
 
