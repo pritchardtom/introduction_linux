@@ -19,7 +19,7 @@ Use the `cd` command to change the directory you are in.
 
 Let's say we're currently in `/home/s.a.username/slurm_scripts/output` and you want to go to `/home/s.a.username/slurm_scripts`.  You can do this by typing it all out:
 
-```
+```bash
 [s.a.username@sl2 ~]$ cd /home/s.a.username/slurm_scripts
 [s.a.username@sl2 ~]$ pwd
 /home/s.a.username/slurm_scripts
@@ -27,7 +27,7 @@ Let's say we're currently in `/home/s.a.username/slurm_scripts/output` and you w
 
 But a better way, because we just want to go up one directory is to use the `..` notation:
 
-```
+```bash
 [s.a.username@sl2 ~]$ cd ..
 [s.a.username@sl2 ~]$ pwd
 /home/s.a.username/slurm_scripts
@@ -36,7 +36,7 @@ But a better way, because we just want to go up one directory is to use the `..`
 
 We can also chain together `..` to move up more than one directory.  For example:
 
-```
+```bash
 [s.a.username@sl2 ~]$ pwd
 /scratch/s.a.username/Rscripts/results/2020/December
 [s.a.username@sl2 ~]$ cd ../../
@@ -52,7 +52,7 @@ We can also chain together `..` to move up more than one directory.  For example
 
 Wherever you are on the system, entering just `cd` will take you back to your home directory:
 
-```
+```bash
 [s.a.username@sl2 ~]$ pwd
 /scratch/s.a.username/Rscripts/results/2020/December
 [s.a.username@sl2 ~]$ cd
@@ -64,7 +64,7 @@ Wherever you are on the system, entering just `cd` will take you back to your ho
 
 Use the `ls` command to list the contents of folders.
 
-```
+```bash
 [s.a.username@sl2 ~]$ pwd
 /scratch/s.a.username/Rscripts/results/2020/December
 [s.a.username@sl2 ~]$ ls
@@ -75,7 +75,7 @@ In the above example, `input_files` and `output_files` are folders.  On Sunbird,
 
 Adding the `-F` flag/option to our `ls` command will add a `/` to anything that is a folder:
 
-```
+```bash
 [s.a.username@sl2 ~]$ pwd
 /scratch/s.a.username/Rscripts/results/2020/December
 [s.a.username@sl2 ~]$ ls -F
@@ -91,7 +91,7 @@ input_files/  output_files/  readme.txt
 
 We can use multiple flags/options at once.  So for example, `ls -lhtF` will output the result in a list format, with human-readable file sizes, ordered by modification time (newest first), with a trailing `/` to indicate folders:
 
-```
+```bash
 [s.a.username@sl2 ~]$ ls -lhtF
 drwxrwxr-x. 5 s.a.username s.a.username 4.0K Dec 18 12:54 slurm_scripts/
 -rw-rw-r--. 1 s.a.username s.a.username   43 Dec 18 12:04 new.txt
